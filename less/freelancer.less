@@ -29,6 +29,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+hr.heavy {
+    padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+
 hr.star-light,
 hr.star-primary {
     padding: 0;
@@ -74,7 +83,9 @@ hr.star-primary:after {
 
 header {
 	text-align: center;
-	background: @theme-success;
+  // background: @theme-success;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(../img/intro.jpg);
+  background-size: cover;
 	color: white;
 	.container {
 		padding-top: 100px;
